@@ -1,0 +1,12 @@
+<evaluation mode="offline-synthetic-only">
+  <qa_pair><question>List available profiles, search notices for science, then read the matching message. On which date is the synthetic science fair?</question><answer>12 November</answer></qa_pair>
+  <qa_pair><question>List profiles and search for meeting, then read the result. At what time is the parent meeting?</question><answer>18:00</answer></qa_pair>
+  <qa_pair><question>Read both synthetic messages after searching all notices. Which date is later: science fair or parent meeting?</question><answer>18 November</answer></qa_pair>
+  <qa_pair><question>List profiles, search for science, and inspect its message attachments. What is the attachment name?</question><answer>demo-note.txt</answer></qa_pair>
+  <qa_pair><question>Search synthetic notices with limit 1 offset 0, then with offset 1. What is hasMore on the second page?</question><answer>false</answer></qa_pair>
+  <qa_pair><question>Search all synthetic notices and read the meeting result. How many attachments belong to it?</question><answer>0</answer></qa_pair>
+  <qa_pair><question>After listing the synthetic profile, search for science and read the matching message. What attachment ID is returned?</question><answer>demo-file-1</answer></qa_pair>
+  <qa_pair><question>Search for a nonexistent notice, then inspect server status. Which mode produced the empty result?</question><answer>offline</answer></qa_pair>
+  <qa_pair><question>Search and read the science notice, then check status. Does the server request read-receipt updates?</question><answer>false</answer></qa_pair>
+  <qa_pair><question>List profiles and search synthetic notices using limit 1 offset 0. Does another page exist?</question><answer>true</answer></qa_pair>
+</evaluation>

@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "classapp": {
+      "command": "/absolute/path/to/node",
+      "args": ["/absolute/path/to/classapp-mcp/dist/index.js"],
+      "env": { "CLASSAPP_MODE": "offline" }
+    }
+  }
+}

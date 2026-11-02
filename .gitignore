@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.env*
+private/
+*.log
+.DS_Store
+
+# Private runtime and local packaging artifacts
+*.tgz
+credentials*
+*session*.json
+downloads/
+*.har

@@ -1,0 +1,65 @@
+{
+  "name": "classapp-mcp-server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Unofficial local-first ClassApp MCP for bounded notice reading and private attachment downloads",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "node --test test/*.test.mjs",
+    "test:security": "node --test test/security.test.mjs",
+    "test:smoke": "node --test test/mcp.test.mjs",
+    "test:mutation-controls": "node scripts/mutation-controls.mjs",
+    "verify": "npm run build && npm test && npm run test:mutation-controls",
+    "prepublishOnly": "npm run verify"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "2.3.1",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "typescript": "7.0.2"
+  },
+  "license": "MIT",
+  "author": "David Mosiah",
+  "bin": {
+    "classapp-mcp-server": "dist/index.js"
+  },
+  "files": [
+    "dist/**/*.js",
+    "README.md",
+    "LICENSE",
+    "SECURITY.md",
+    "CONTRIBUTING.md",
+    "CHANGELOG.md",
+    "docs/API-CONTRACT.md",
+    "docs/SETUP.md",
+    "docs/THREAT-MODEL.md",
+    "docs/RESPONSIBLE-USE.md",
+    "docs/RELEASING.md",
+    "docs/GUIA-PAIS.pt-BR.md",
+    "examples/mcp.offline.json",
+    "examples/mcp.live.json"
+  ],
+  "keywords": [
+    "mcp",
+    "classapp",
+    "unofficial",
+    "local-first",
+    "school",
+    "parents"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidmosiah/classapp-mcp.git"
+  },
+  "homepage": "https://github.com/davidmosiah/classapp-mcp",
+  "bugs": {
+    "url": "https://github.com/davidmosiah/classapp-mcp/issues"
+  }
+}

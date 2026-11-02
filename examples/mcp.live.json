@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "classapp": {
+      "command": "/absolute/path/to/node",
+      "args": ["/absolute/path/to/classapp-mcp/dist/index.js"],
+      "env": {
+        "CLASSAPP_MODE": "live",
+        "CLASSAPP_CREDENTIALS_FILE": "/absolute/private/path/classapp/session.json",
+        "CLASSAPP_DOWNLOAD_DIR": "/absolute/private/path/classapp/downloads"
+      }
+    }
+  }
+}
